@@ -40,7 +40,7 @@ def handle_message(event):
     msg = event.message.text
     r = '我看不懂~~~'
     
-    if msg == 'hi':
+    if msg in ['hi', 'Hi', '嗨']:
         r = 'hi'
     elif msg == '你吃飯了嗎':
         r = 'Not yet'
