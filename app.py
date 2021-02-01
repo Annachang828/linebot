@@ -44,6 +44,10 @@ def handle_message(event):
         r = 'hi'
     elif msg == '你吃飯了嗎':
         r = 'Not yet'
+    elif msg == '你是誰?':
+        r = '我是機器人!'
+    elif '聊' in msg:
+        r = '你想要找人聊天嗎?'
 
     line_bot_api.reply_message(
         event.reply_token,
